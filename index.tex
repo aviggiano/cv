@@ -1,0 +1,131 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvtheme[black]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[scaled]{helvet}
+\usepackage{lmodern}
+\usepackage[margin=1.5cm]{geometry}
+
+\newcommand{\SECTIONSPACE}{\vspace{0em}}
+\newcommand{\ENTRYSPACE}{\vspace{0.5em}}
+\newcommand{\LANGUAGESPACE}{\hspace{1.0cm}}
+
+%config impressora helo
+%\addtolength{\topmargin}{0.7cm}
+%\addtolength{\oddsidemargin}{-0.25cm}
+
+%----------------------------------------------------------------------------------------
+%	CV english v. 9.2
+%	Antonio Guilherme FERREIRA VIGGIANO
+%   dir : ./CV_en	
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	for computer skills
+%----------------------------------------------------------------------------------------
+\renewcommand*{\cvdoubleitem}[4]{%
+  \cvline{#1}{\begin{minipage}[t]{1.4\doubleitemmaincolumnwidth}#2\end{minipage}%
+      \hfill%
+      \begin{minipage}[t]{\hintscolumnwidth}\raggedleft\hintfont{#3}\end{minipage}\hspace*{\separatorcolumnwidth}\begin{minipage}[t]{\doubleitemmaincolumnwidth}#4\end{minipage}}}
+
+%----------------------------------------------------------------------------------------
+%	for language skills
+%----------------------------------------------------------------------------------------
+\renewcommand*{\cvlanguage}[3]{%
+  \cvline{#1}{\textbf{#2}\hspace*{\separatorcolumnwidth}\emph{#3}}}
+
+%----------------------------------------------------------------------------------------
+%	ragged
+%----------------------------------------------------------------------------------------
+\renewcommand*{\cvline}[3][.25em]{%
+  \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
+    \centering\hintfont{#2} &{#3}%
+  \end{tabular}\\[#1]}
+
+\renewcommand*{\cventry}[6]{%
+  \cvline{\centering#1}{%
+    {\bfseries#2}%
+    \ifthenelse{\equal{#3}{}}{}{, {\slshape#3}}%
+    \ifthenelse{\equal{#4}{}}{}{, #4}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    .%
+    \ifx&#6&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}\small#6\end{minipage}}\fi%
+}}%	  
+
+%----------------------------------------------------------------------------------------
+%	title on the right
+%----------------------------------------------------------------------------------------
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+\patchcmd{\makecvtitle}{[b]}{[t]}{}{}
+
+%----------------------------------------------------------------------------------------
+%	hyphenation
+%----------------------------------------------------------------------------------------
+\hyphenation{performing}
+\hyphenation{Operational}
+\hyphenation{Others}
+\hyphenation{Engineering}
+
+%----------------------------------------------------------------------------------------
+%	others
+%----------------------------------------------------------------------------------------
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+%----------------------------------------------------------------------------------------
+%	contact information
+%----------------------------------------------------------------------------------------
+\firstname{\large{\textbf{Antônio Guilherme Ferreira Viggiano}} }
+\familyname{\\ \emph{586, Rua Mateus Grou, Apt 22. São Paulo, SP -- Brazil\\ +55 11 9519 64111 \\ antonio@viggiano.com.br}}
+
+\begin{document}
+\begin{center}
+  \makecvtitle
+\end{center}
+
+\vspace*{-1.5em}
+
+%----------------------------------------------------------------------------------------
+%	CV description
+%----------------------------------------------------------------------------------------
+\centering
+    {
+%      \fbox
+          {
+            \begin{minipage}{0.98\textwidth}
+              \vspace{1pt}
+              \centering{{\Large \bfseries \textsc{Software Engineer, University Graduate}}}
+            \end{minipage}
+          }
+%    }
+
+%----------------------------------------------------------------------------------------
+%	CV body
+%----------------------------------------------------------------------------------------
+\vspace*{-0.25em}
+
+\section{Education}
+\cventry{2011 \textemdash~2013}{Master of Engineering (Multidisciplinary)}{École Centrale Marseille}{Double Degree}{}{\textbf{Emphasis: Information Technology and Digital Society}\\ Eiffel Scholarship awarded to exchange students by the French Ministry of Foreign and European Affairs \ENTRYSPACE}
+\cventry{2009 \textemdash~2014 (expected)}{Bachelor of Engineering (Mechatronics)}{Universidade de São Paulo}{}{}{}
+\section{Work Experience}
+\cventry{Jun-Jul 2013 \\(2 months)}{Software Development Intern}{Asert Tecnologias}{}{Brazil}{Development of an Entreprise Resource Planning system in Java and Flex\ENTRYSPACE}
+\cventry{August 2012}{Summer Discovery Intern}{Gemalto S.A.}{}{France}{Operated credit card personalization machines and acquired work environment familiarization\ENTRYSPACE}
+\section{Extra-Curricular Activities}
+\cventry{2012}{Project Manager}{École Centrale Marseille}{}{}{Lead a group of seven students in the development of a real-time air quality monitoring platform \\ Built a Java program to establish serial data communication with Xbee radio modules\ENTRYSPACE}
+\cventry{2012}{President}{International Centrale Marseille}{Students' association}{}{Responsible for the integration of exchange students and for the international mobility\ENTRYSPACE}
+\cventry{2011}{Undergraduate Scientific Researcher}{Universidade de São Paulo}{}{}{Researcher in the bioengineering area, responsible for the development of a filter which separates images of ventilation and perfusion in electrical impedance tomography\ENTRYSPACE}
+%\cventry{2010}{Numerical Calculus Monitor}{Universidade de São Paulo}{}{}{Corrected assignments written in C and supervised tests}
+\section{Computer Skills}
+\cvcomputer{Programming Languages}{\textbf{C/C++, Java, Python} \\ Prolog, Scala, R}{\begin{center}Operational Systems\end{center}}{\textbf{Linux}, Chrome OS, Windows\ENTRYSPACE}
+\cvcomputer{Database}{\textbf{MS SQL Server, SQLite}, MySQL}{\begin{center}Web\end{center}}{HTML/CSS, JavaScript, PHP\ENTRYSPACE}
+\cvcomputer{Software}{\textbf{Emacs, Eclipse}, Matlab \& Simulinks, Visual Studio}{\begin{center}Others\end{center}}{Git, \LaTeX}
+\section{Language Skills}
+\cvline{}{\textbf{Portuguese} Native \LANGUAGESPACE \textbf{French} Fluent (DALF C1) \LANGUAGESPACE \textbf{English} Advanced (TOEIC 975/990) \LANGUAGESPACE \textbf{Japanese} Basic \LANGUAGESPACE \hspace{0.4cm} \textbf{Spanish} Beginner}
+\section{Projects}
+\cvline{Music \& Social}{Extra-curricular development of a Node.js web application to create streaming playlists based on your musics and your friends' who connect to the website \ENTRYSPACE}
+\cvline{Data Mining}{Developed a Django/Python website to search data inside free ebooks from the Project Gutenberg\ENTRYSPACE}
+\cvline{AI}{Developed a Java expert system to suggest travel destinations based on user input data}}
+\section{Interests}
+\cvline{}{Human-computer interaction, Artificial Intelligence, e-learning, Table tennis, Chess}
+%\newline{\emph{Accomplished X by implementing Y which led to Z}}}
+
+\end{document}
