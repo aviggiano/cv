@@ -1,0 +1,100 @@
+\documentclass[11pt]{article}
+
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}\fi
+
+\pagestyle{empty}
+
+\usepackage[margin=2cm]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Antonio Guilherme}
+\def\familyname{Ferreira Viggiano}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{Personal Statement \textemdash~\firstname \familyname}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Personal Statement}
+%\def\today{November 9, 2012} %% remove if not applicable byAFGV
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1,colorlinks=false]{hyperref} %% added hidelinks to hyperref byAGFV
+  \hypersetup{
+    pdfauthor = \FileAuthor,%
+    pdftitle = \FileTitle,%
+    pdfsubject = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+\usepackage{helvet}
+\usepackage{ragged2e}
+
+\begin{document}
+\sffamily % for use with a résumé using sans serif fonts;
+%\rmfamily % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries Antonio Guilherme Ferreira Viggiano}\\[.35ex]
+\small
+\emph{Rua Augusta, 2099, Apt 22. São Paulo, SP, Brazil \\
++55 11 95196 4111 \textemdash~agfviggiano@gmail.com}
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+\raggedright%
+{\bfseries Google Inc.}\\[.35ex]
+\small\itshape%
+North American Locations
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+\today
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[2em]
+%\raggedright
+%\RaggedRight
+Dear Sir or Madam,\vspace{1.5em}
+% 
+
+
+
+It was with great interest that I read your offer for a Software Engineering Intern in North America. Designing and implementing complex computer science solutions for a versatile company like Google require strong expertise in programming, data structures and algorithms, which match well my technical qualifications. Curiosity and eager to innovate, yet is what best matches my character. \vspace{0.75em}
+
+Currently pursuing a Bachelors double degree in Multidisciplinary Engineering at the École Centrale Marseille, in France, and in Mechatronics Engineering at the Universidade de São Paulo, in Brazil, I have an extremely wide and general education, which is nevertheless oriented to information technology. \vspace{0.75em}
+
+As Computer Science was not my major degree in both schools to which I am attending, I have always made my best effort to be at the level of the top students from the field. Whether it was trough regular coursework, through online extra academic courses -- provided by programs such as Udacity or Coursera --, or through web tutorials, I made my way to learn new programming languages and algorithms, and to apply them in real-life contexts. That is why even though I don't have a pure Software Engineering background, I believe that I am well qualified to make an excellent contribution to your operations. \vspace{0.75em}
+
+Other aspects that differentiates me are my role as the project manager of the cross-disciplinary project in France, which consisted in developing a multi-sensor platform sensitive to various pollutants, and my participation in extra-curricular activities, as the president of the students' association "International Centrale Marseille", responsible for the integration of exchange students. Being the leader of these two teams led me to make decisions, take responsibility, and to develop management and teamwork skills. These competences will be of great value to your software development team, which does not limit itself by its ability of coding, but is defined by its capacity of seeing throughout one's needs and finding innovative solutions. \vspace{0.75em}
+
+Enclosed is a copy of my Curriculum Vitae for your review. I would welcome a phone interview at your earliest convenience to discuss your needs and the possibility of working together to meet them. Thank you for your time and consideration. \vspace{0.75em}
+
+  
+%Yours sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
+Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries Antônio Guilherme Ferreira Viggiano}\\
+%
+\vfill%
+%{\slshape Enclosure}
+%{\slshape Attachment: curriculum vit\ae{}}
+\end{document}
