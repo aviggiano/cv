@@ -1,12 +1,12 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 \moderncvtheme[black]{classic}                
 \usepackage[utf8]{inputenc}
 \usepackage[scaled]{helvet}
 \usepackage{lmodern}
-\usepackage[margin=1.5cm]{geometry}
+\usepackage[margin=1.7cm]{geometry}
 
 \newcommand{\ENTRYSPACE}{\vspace{0.5em}}
-\newcommand{\LANGUAGESPACE}{\hspace{1.0cm}}
+\newcommand{\LANGUAGESPACE}{~}
 
 \sethintscolumnlength{5.5em}
 \hyphenation{visualization}
@@ -17,19 +17,23 @@
 \newcommand*{\Cdot}{-\hspace{0.25em}}
 \newcommand*{\tinyspace}{\hspace{0.5em}}
 
-%--------------------
-%	for language skills
-%--------------------
-\renewcommand*{\cvlanguage}[3]{
-  \cvline{#1}{\textbf{#2}\hspace*{\separatorcolumnwidth}\emph{#3}}}
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    .\strut%
+    \ifx&#7&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}#7\end{minipage}}\fi}}
 
 %--------------------
 %	contact information
 %--------------------
-\firstname{\large{\textbf{Antonio Guilherme Ferreira Viggiano}}}
+\firstname{\normalsize{\textbf{Antonio Guilherme Ferreira Viggiano}}}
 \familyname{
   \\ \emph{Rua Augusta, 2099, Apt 42. São Paulo, SP, Brazil
-    \\ +55 11 95196 4111 \textemdash~agfviggiano@gmail.com}
+    \\ +55 11 95196 4111 \\ agfviggiano@gmail.com}
 }
 
 \begin{document}
@@ -46,7 +50,7 @@
 
 \section{Education}
 
-\cventry{2011 \newline{\textemdash} \newline{2013} \newline{}}{General Engineering (Master's degree)}{École Centrale Marseille}{Double Degree}{}{
+\cventry{2011~\textemdash~2013}{General Engineering (Master's degree)}{École Centrale Marseille}{Double Degree}{}{
   \textbf{Emphasis on Information Technology and Digital Society, GPA 3.9 out of
     4 (top 5\%)}
   \\ \Cdot Eiffel Excellence Scholarship award by the French Ministry of Foreign and European Affairs 
@@ -58,7 +62,7 @@
   \ENTRYSPACE
 }
 
-\cventry{2009 \newline{\textemdash} \newline{2014} \newline{}}{Mechatronics Engineering (Bachelor's
+\cventry{2009~\textemdash~2014}{Mechatronics Engineering (Bachelor's
   degree)}{Escola Politécnica, Universidade de São Paulo}{}{}{
   \textbf{Ranked 2nd best student, ponderaded average 8.2 out of 10 (top 5\%)}
   \\ \Cdot Thesis: Proposal of a recommender system algorithm and development of
@@ -101,11 +105,12 @@
 
 \cvline{Languages}{\textbf{Portuguese}\tinyspace{}Native \LANGUAGESPACE \textbf{French}\tinyspace{}Fluent (DALF C1) \LANGUAGESPACE
   \textbf{English}\tinyspace{}Fluent (TOEFL 110/120) \LANGUAGESPACE
-  \textbf{Spanish}\tinyspace{}Intermediate \hspace{0.58cm} \textbf{Japanese}\tinyspace{}Basic \ENTRYSPACE}
+  \newline{ \textbf{Spanish}\tinyspace{}Intermediate \LANGUAGESPACE
+    \textbf{Japanese}\tinyspace{}Basic \ENTRYSPACE }}
 
 \cvline{Programming}{Proficient in C/C\texttt{++}, Node.js, Bash, AWS and related technologies;
   open source contributor and author of the redis-roaring compressed bitmap library, one of the top 10 most
-    starred redis modules; developed a crowdsourcing app in
+    starred Redis modules; developed a crowdsourcing app in
     the São Paulo Public Transportation Hackathon and got 2nd place among over
     50 teams \ENTRYSPACE}
 
