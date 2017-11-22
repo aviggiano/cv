@@ -5,25 +5,14 @@
 \usepackage{lmodern}
 \usepackage[margin=1.7cm]{geometry}
 
-\newcommand{\ENTRYSPACE}{\vspace{0.5em}}
-\newcommand{\LANGUAGESPACE}{~}
-
 \sethintscolumnlength{5.5em}
 \hyphenation{visualization}
 \hyphenation{coordinating}
 \hyphenation{processing}
 
 
-% \usepackage[pdftex,
-%             pdfauthor={Your Name},
-%             pdftitle={The Title},
-%             pdfsubject={The Subject},
-%             pdfkeywords={Some Keywords},
-%             pdfproducer={Latex with hyperref, or other system},
-%             pdfcreator={pdflatex, or other tool}]{hyperref}
-
+\newcommand{\ENTRYSPACE}{\vspace{0.5em}}
 \newcommand*{\Cdot}{-\hspace{0.25em}}
-\newcommand*{\tinyspace}{\hspace{0.5em}}
 
 \renewcommand*{\cventry}[7][.25em]{%
   \cvitem[#1]{#2}{%
@@ -89,7 +78,7 @@
 \section{Professional Experience}
 \cventry{Nov 2014 \newline{\textemdash} \newline{Aug 2017} \newline{}}{Co-founder \& Tech Lead}{BelugaDB}{}{Brazil}{
   \emph{BelugaDB is a big data platform that provides real-time
-  insights through dashboards and alarms}
+  insights through dashboards and machine learning}
   \\ \Cdot Managed a group of 4 senior software engineers as the lead database developer
   \\ \Cdot Designed and developed most of the high-performance columnar
   database, including its compressed bitmaps indexing strategy, its search
@@ -110,16 +99,13 @@
   \\ \Cdot Lead a task force of 3 people in the development of an anti-fraud algorithm
   which reduced 80\% of all invalid requests by applying a set of rules to 
   suspicious traffic, saving thousands of dollars in refunds 
-  \\ \Cdot Helped design and lead the onboarding process of the company by structuring programming crash courses, culture meetings and off-site activities with new hires
-  \\ \Cdot Helped restructure the company's security policies by adopting best practices and guidelines
+  \\ \Cdot Helped design and lead the onboarding process of the company by structuring programming courses, culture meetings and off-site activities with new hires
+  \\ \Cdot Helped restructure the company's security policies by adopting best practices and preventive measures
 }
 
 \section{Additional Information}
 
-\cvline{Languages}{\textbf{Portuguese}\tinyspace{}Native \LANGUAGESPACE \textbf{French}\tinyspace{}Fluent (DALF C1) \LANGUAGESPACE
-  \textbf{English}\tinyspace{}Fluent (TOEFL 113/120) \LANGUAGESPACE
-  \newline{ \textbf{Spanish}\tinyspace{}Intermediate \LANGUAGESPACE
-    \textbf{Japanese}\tinyspace{}Basic \ENTRYSPACE }}
+\cvline{Languages}{\textbf{Portuguese} Native, \textbf{English} Fluent (TOEFL 113/120), \textbf{French} Fluent (DALF C1), \newline{\textbf{Spanish} Intermediate, \textbf{Japanese} Basic \ENTRYSPACE}}
 
 \cvline{Programming}{Proficient in C/C\texttt{++}, Node.js, Bash, AWS and related technologies;
   open source contributor and author of the redis-roaring compressed bitmap library, one of the top 10 most
