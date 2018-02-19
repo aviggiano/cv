@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}\fi
+
+\pagestyle{empty}
+
+\usepackage[margin=2cm]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5em}
+
+\def\firstname{Antonio Guilherme }
+\def\familyname{Ferreira Viggiano}
+\def\subj{Personal Statement}
+\def\FileAuthor{\firstname\familyname}
+\def\FileTitle{\firstname\familyname~\textemdash~\subj}
+\def\FileSubject{\subj}
+\def\FileKeyWords{\firstname\familyname, \subj}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1,colorlinks=false]{hyperref} %% added hidelinks to hyperref byAGFV
+  \hypersetup{
+    pdfauthor = \FileAuthor,%
+    pdftitle = \FileTitle,%
+    pdfsubject = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+\usepackage{helvet}
+\usepackage{ragged2e}
+
+\begin{document}
+\sffamily % for use with a résumé using sans serif fonts;
+
+{\bfseries \FileTitle}
+
+% universities on the planet
+% leave a mark on humanity
+% applying for
+% which made me familiar -- NO -- semented my knowledge
+% which have opened -- which opened
+% I have read -- I read
+% I have been reading - I read, which has helped me
+
+% TODO
+% rapid pace
+% reasoning ability
+
+Being an engineer by training and a programmer by profession, I now aspire to be a mathematician and physicist, seeking to change society through the development of science. My desire to make a difference goes back to when I applied for Mechatronics Engineering at the University of São Paulo, in Brazil, hoping to become an inventor and impact many people's lives. At the same time, during my double degree in General Engineering at the École Centrale Marseille, in France, I was exposed to many abstract lectures containing more rigorous mathematical studies of physical systems. There, I started to develop a deeper interest in theoretical subjects over practical ones, which would follow me until this day. By reassessing my life objectives and personal interests, I have decided to dedicate myself to leaving a mark on the world as a discoverer, which is the main reason why I am applying for a Master of Science in Applied Mathematics at ETH Zurich.
+
+My interest in the physical applications of mathematics initiated when I attended an elective subject on Partial Differential Equations. I found it very entertaining to examine the analytical solutions of the Laplace, heat and wave equations in high-dimensional spaces, and greatly enjoyed the rigorous Fourier analysis of those linear problems. Another thought-provoking course which explained mathematical tools used in physics was Analysis -- complements and applications. The formalism of Distribution Theory finally filled the gap of the loose definitions presented in the first years of university, such as in the relationship between the Dirac delta function and the Heaviside function.
+
+Throughout my career in software development, I never ceased to deepen my knowledge of academic disciplines. In particular, I have always been fascinated by quantum physics, as it is a field of knowledge that frequently defies our intuition. It all started with Richard Feynman's ``QED: The Strange Theory of Light and Matter'', which captivated me with the elementary explanations of Feynman diagrams and quantum electrodynamics. Later, looking forward to extending my basis of Quantum Mechanics from the French curriculum, I began self-studying Leon van Dommelen's textbook on ``Quantum Mechanics for Engineers'' in my spare time, assimilating advanced topics such as multiple-particle systems. The presentation of symmetric and antisymmetric wave functions and the direct consequence of the Pauli exclusion principle was eye opening, especially because it clarified something I first saw in high school. More recently, wanting to learn in more detail about quantum computers, I have read through the ``Quantum Computation and Quantum Information Theory'' lecture notes from the Carnegie Mellon University. The description of quantum circuits, constantly confronted with their classical counterparts, is exhilarating to those interested in the intersection between computer science, physics and mathematics. This constant search for the ``the pleasure of finding things out'', as Feynman would put it, led me to question if my occupation was completely aligned with my life purpose.
+
+After reassessing that all my free time was devoted to theoretical subjects, I decided to leave my position as technical lead of my company in order to pursue science as a vocation. Despite my accomplishments as an entrepreneur, I ultimately realized that the impact of our actions in the private sector are generally not as permanent as when they are applied to the comprehension of the universe.
+
+ETH's master's course on Applied Mathematics is therefore an ideal choice to expand my long-standing interest in natural philosophy and to prepare me for research in the field. Because of my interest in Theoretical Physics, I intend to select this application area of the programme. I am particularly excited about the lectures on Quantum Field Theory and General Relativity, which will be an exciting follow up on Special Relativity and Quantum Mechanics that I have had in my exchange program. After completing the course, I would like to apply for a Ph.D. programme at ETH Zurich or another top-tier institute and continue to follow my ambition of influencing future generations as a researcher in Applied Mathematics.
+
+% apply to an university
+% apply for a course
+
+\end{document}
